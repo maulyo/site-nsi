@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+		<script src="javascript.js"></script>
+		<link rel="stylesheet" href="style2.css">
+        <title>L'album photos</title>
+    </head>
+    <body>
+		<p><a href= "index10.html">Retour</a></p>
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <div class="slide-index">1 / 4</div>
+                <img class="slide-img" src="chien-eau.webp" width="50%" title="Loups"/>
+                <div class="slide-text">Chien dans un ruisseau durant une cani-rando</div>
+            </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">2 / 4</div>
+                <img class="slide-img" src="cani-rando.jpg" width="50%" title="Loups">
+                <div class="slide-text">Cani-rando...</div>
+            </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">3 / 4</div>
+                <img class="slide-img" src="chiens-stake.jpg" width="50%" title="Loups">
+                <div class="slide-text">Chiens sur la stake-out.</div>
+            </div>
+			<div class="custom-slider fade">
+                <div class="slide-index">4 / 4</div>
+                <img class="slide-img" src="chien-julien.jpeg" width="50%" title="Loups">
+                <div class="slide-text">Chiens avec leur musher, Julien.</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">←</a>
+            <a class="next" onclick="plusSlides(1)">→</a>
+        </div>
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </body>
+</html>

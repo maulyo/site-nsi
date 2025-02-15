@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Changer la couleur</title>
+	<style>
+    	#text {
+        	font-size: 24px;
+        	color: black;
+    	}
+	</style>
+</head>
+<body>
+
+	<p id="text">Cliquez sur le bouton pour changer ma couleur !</p>
+	<button id="colorButton">Changer la couleur</button>
+
+	<script>
+    	document.getElementById("colorButton").addEventListener("click", function() {
+        	let textElement = document.getElementById("text");
+        	let colors = ["red", "blue", "green", "purple", "orange"];
+        	let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        	textElement.style.color = randomColor;
+    	});
+	</script>
+
+</body>
+</html>
+

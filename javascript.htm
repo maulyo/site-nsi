@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Effet de survol sur une image</title>
+	<style>
+    	img {
+        	width: 200px;
+        	height: auto;
+        	transition: transform 0.3s ease-in-out;
+    	}
+	</style>
+</head>
+<body>
+
+	<h2>Passez la souris sur l'image</h2>
+	<img id="image" src="https://cdn.futura-sciences.com/cdn-cgi/image/width=1280,quality=50,format=auto/sources/images/diaporama/1238-juveniles/album-faune-juvenile3.jpg" alt="Image test">
+
+	<script>
+    	let img = document.getElementById("image");
+
+    	img.addEventListener("mouseover", function() {
+        	img.style.transform = "scale(1.2)"; // Agrandit l'image de 20%
+    	});
+
+    	img.addEventListener("mouseout", function() {
+        	img.style.transform = "scale(1)"; // Retour à la taille normale
+    	});
+	</script>
+
+</body>
+</html>

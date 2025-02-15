@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to bottom, #7DF9FF, #ADD8E6, #5D8AA8);
+    background-attachment: fixed;
+    background-size: cover;
+	font-family: "Open Sans";
+	font-size: 18px;
+	color: black;
+	size: 100%
+} 
+
+h1 {
+	font-family: "Algerian";
+	font-size: 35px;
+}
+
+h2 {
+	font-family: "Consolas";
+    font-size: 30px;
+}
+
+h3 {
+	font-family: "Consolas";
+    font-size: 25px;
+}
+
+h4 {
+	font-family: "Agency FB";
+	font-size: 20px;
+}
+
+.img {
+	clip-path: ellipse(50% 50%);
+}
+
+.im {
+	clip-path: ellipse(80% 50%);
+	z-index: 1;
+}
+
