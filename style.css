@@ -54,6 +54,10 @@ td {
 	text-align: center;
 }
 
+audio {
+	display: none;
+}
+
 #info {
 	top: 0;
 	right: 0;
@@ -62,3 +66,16 @@ td {
 	position: fixed;
 }
 
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% {transform: scale(1)}
+	20% {transform: scale(1.2)}
+	40% {transform: scale(0.8)}
+	60% {transform: scale(1)}
+	100% {transform: scale(1)}
+}
