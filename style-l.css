@@ -1,0 +1,73 @@
+body {
+	background:
+		linear-gradient(to bottom, rgba(217, 217, 217,0.5), rgba(215, 200, 169, 0.8)),
+		url('https://cdn.futura-sciences.com/sources/loup-gris-hurle-bennytrapp-AdobeStock2.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Open Sans";
+	font-size: 18px;
+	color: black;
+	font-style: normal;
+	z-index: 1;
+	text-align: center;
+} 
+
+h1 {
+	font-family: "Algerian";
+	font-size: 35px;
+}
+
+h2 {
+	font-family: "Consolas";
+    font-size: 30px;
+}
+
+h3 {
+	font-family: "Consolas";
+    font-size: 25px;
+}
+
+h4 {
+	font-family: "Agency FB";
+	font-size: 20px;
+}
+
+.img {
+	clip-path: ellipse(50% 50%);
+}
+
+.im {
+	clip-path: ellipse(80% 50%);
+	z-index: 1;
+}
+
+table {
+	border-collapse: collapse;
+	color: black;
+	font-family: Open Sans;
+	font-size: 18px;
+	margin: auto;
+}
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+.btn-retour {
+	text-align: left;
+	left: 5px;
+	top: 5px;
+	position: fixed;
+}
+
+#info {
+	top: 0;
+	right: 0;
+	margin: 5px;
+	padding: 5px;
+	position: fixed;
+}
+
