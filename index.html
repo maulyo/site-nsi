@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Visiter la Creuse</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="man.png">
+	</head>
+	<body>
+		<h1>Visiter la Creuse...</h1>
+		<img id="info" src="info.png" width="2.5%"/>
+		<p2 id="text-info">Ce site a été conçu par un élève de première spécialité NSI; les textes et images peuvent être soumis à des droits d'auteur.</p2>
+		<br>
+		<img class="im" src="acc5.jpg" onclick="window.open('https://www.tourisme-creuse.com/pays-dunois/decouvrir/villes-et-villages-de-caracteres/crozant/', '_blank')" width="17%" title="Crozant"/>
+		<img class="im" src="acc4.jpg" onclick="window.open('https://www.tourisme-creuse.com/lac-de-vassiviere/', '_blank')" width="20%" title="Vassivière"/>
+		<h2><i>Vous vous demandez ce que l'on peut visiter en Creuse ?</i></h2>
+		<h3>... Pas de soucis ! Ce site recense plusieurs sites touristiques creusois à découvrir pour vous en mettre plein les yeux !</h3>
+		<br>
+		<h4><h2><a href= "index1.html"><b>Les Loups de Chabrières</b></a></h2></h4>
+		<h4><h2><a href= "index10.html"><b>Husk'in Creuse</b></a></h2></h4>
+		<img class="im" src="acc1.jpg" onclick="window.open('https://www.loups-chabrieres.fr/', '_blank')" width="20%" title="Les Loups de Chabrières"/>
+		<img class="im" src="acc2.jfif" onclick="window.open('https://www.lacelledunoise.fr/', '_blank')" width="20%" title="La Celle-Dunoise"/>
+		<img class="im" src="acc3.jpg" onclick="window.open('https://www.tourisme-creuse.com/monts-de-gueret/decouvrir/sites-naturels/foret-domaniale-de-chabrieres/', '_blank')" width="20%" title="Chabrières"/>
+		<script>
+			let img = document.querySelectorAll('.im').forEach(element => {
+				element.style.position = "relative";
+				element.addEventListener("mouseover", function() {
+					element.style.zIndex = 10;
+					element.style.transform = "scale(1.2)";
+				});
+				element.addEventListener("mouseout", function() {
+					element.style.zIndex = 1;
+					element.style.transform = "scale(1)";	
+				});
+			})
+			
+			let logo = document.getElementById('info');
+			let txt = document.getElementById('text-info');
+			logo.addEventListener('mouseover', function() {
+				alert("Ce site a été conçu par un élève de première spécialité NSI; les textes et images peuvent être soumis à des droits d'auteurs.");
+			})
+		</script>
+	</body>
+</html>
+
